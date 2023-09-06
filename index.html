@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Calculadora de TMB</title>
+</head>
+<body>
+  <div id="container">
+    <div>
+      <h1 class="title">Calculadora de Taxa de Metabolismo Basal</h1>
+    </div>
+    <div>
+      <form class="form" id="form">
+        <label for="gender">
+          <p>Selecione seu sexo</p>
+        </label>
+          <p>
+            <select name="gender" id="gender" class="formSelect">
+              <option value="Homem">Homem</option>
+              <option value="Mulher">Mulher</option>
+            </select>
+          </p>       
+        <label for="height">
+          <p>Qual sua altura?</p>
+        </label>
+          <p>
+            <input type="number" placeholder="em cm" name="height" id="height" class="formInput" required>
+          </p>  
+        <label for="weight">
+          <p>Qual seu peso?</p>
+        </label>
+          <p>
+            <input type="number" placeholder="em kgs" name="weight" id="weight" class="formInput" required>
+          </p>
+        <label for="years">
+          <p>Qual sua idade?</p>
+        </label>
+          <p>
+            <input type="number" placeholder="em anos" name="years" id="years" class="formInput" required>
+          </p>
+        <button type="submit" class="formSubmit">Calcular!</button>    
+      </form>
+    </div>
+    <div id="total">
+      Seu TMB é de:
+      <span id="tmb">0</span>
+    </div>
+  </div>
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
